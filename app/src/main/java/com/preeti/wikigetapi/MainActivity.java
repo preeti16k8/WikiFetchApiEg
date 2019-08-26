@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements  SwipeRefreshLayo
             @Override
             public void onResponse(Call<WikiResponse> call, Response<WikiResponse> response) {
 
-                Log.d("rrrrressp",response.body().getQuery().toString());
+              //  Log.d("rrrrressp",response.body().getQuery().toString());
                 if (response.isSuccessful() && response.body().getQuery() != null){
 
                     if (!Wikipages.isEmpty()){
